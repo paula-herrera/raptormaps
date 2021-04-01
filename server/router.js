@@ -4,7 +4,7 @@ let router = express.Router();
 const controllers = require('./controller');
 
 router
-  .route('/test')
+  .route('/:solar_farm_id/technicians')
   .get((req, res) => {
     controllers.getData(req, res);
   })

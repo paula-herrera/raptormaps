@@ -1,8 +1,9 @@
-const testData = require('../data/api_technician_response_data.json')
+const technicianData = require('../data/api_technician_response_data.json')
 
 let controllers = {
   getData: (req, res) => {
-    res.status(200).send(testData);
+    // for now just sending back one set of data
+    res.status(200).send(technicianData[0]);
   }
 }
 
