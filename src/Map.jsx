@@ -10,18 +10,19 @@ mapboxgl.accessToken = MAPBOX_ACCESS_TOKEN.MAPBOX_ACCESS_TOKEN;
 
 const Map = ({techData}) => {
   const mapContainer = useRef();
-  const [lng, setLng] = useState(-115.5959);
-  const [lat, setLat] = useState(32.6744);
+  const [lng, setLng] = useState(-115.5981);
+  const [lat, setLat] = useState(32.6748);
   const [zoom, setZoom] = useState(15);
 
+  // Create map and update everytime new TechData is recieved
   useEffect(() => {
-    createMap();
-  }, []);
+      createMap();
+  }, [techData]);
 
   const createMap = () => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/mapbox/satellite-v9',
       center: [lng, lat],
       zoom: zoom
     });
