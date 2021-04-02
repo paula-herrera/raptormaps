@@ -1,6 +1,20 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  background-image: url('./images/Raptor-Maps-logo-orange.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 150px;
+  margin-top: 40px;
+}
+
 .map-container {
   position: absolute;
-  top: 50px;
+  top: 227px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -13,26 +27,26 @@
   font: 15px/24px monospace;
   z-index: 1;
   position: absolute;
-  top: 50px;
+  top: 227px;
   left: 0;
   margin: 12px;
   border-radius: 4px;
   }
 
-  .marker {
-    background-image: url('./images/technician.png');
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-  }
+.marker {
+  background-image: url('./images/technician.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
-  .mapboxgl-popup {
-    max-width: 200px;
-  }
+.mapboxgl-popup {
+  max-width: 200px;
+}
 
-  .mapboxgl-popup-content {
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-  }
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}

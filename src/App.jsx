@@ -10,6 +10,7 @@ const App = ({initialData}) => {
     const interval = setInterval(() => {
       getTechData();
     }, 30 * 1000);
+
     return () => clearInterval(interval);
   }, []);
 
@@ -19,9 +20,14 @@ const App = ({initialData}) => {
   }
 
   return (
-    <div className="main">
-      <Map techData={techData} />
-    </div>
+    <>
+      <div className="header">
+        <div className="logo"></div>
+      </div>
+      <div className="main">
+        <Map techData={techData} />
+      </div>
+    </>
   );
 }
 

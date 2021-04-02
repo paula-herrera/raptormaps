@@ -16,7 +16,7 @@ const Map = ({techData}) => {
 
   // Create map and update everytime new TechData is recieved
   useEffect(() => {
-      createMap();
+    createMap();
   }, [techData]);
 
   const createMap = () => {
