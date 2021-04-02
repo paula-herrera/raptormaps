@@ -1,7 +1,8 @@
 npm install
 
+npm start
+
 npm run build-prod
 
 npm run build-dev
 
-open dist/index.html in browser

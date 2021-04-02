@@ -8,7 +8,7 @@ app.use(express.json());
 
 app.use(express.static(__dirname + './../dist'));
 
-app.use('/api/v1/solar_farms/', router);
+app.use('/api/v1/solar_farms', router);
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
