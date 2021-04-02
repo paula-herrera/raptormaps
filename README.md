@@ -1,6 +1,7 @@
 # Raptor Maps Challenge #
 
 Demo of app that the shows "live" location data of technicians.
+For the purposes of this demo, the map updates every 30 seconds to display the updated locations.
 
 ## Run App ##
 
