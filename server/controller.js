@@ -1,9 +1,19 @@
 const technicianData = require('../data/api_technician_response_data.json')
 
+// Using counter to send cycle through datasets each
+// time data is requested to simulate "real time"
+// updates.
+let dataset = 0;
+
 let controllers = {
   getData: (req, res) => {
-    // for now just sending back one set of data
-    res.status(200).send(technicianData[0]);
+    res.status(200).send(technicianData[dataset]);
+
+    if (dataset === 15) {
+      dataset = 0;
+    } else {
+      dataset++;
+    }
   }
 }
 
